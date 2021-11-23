@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Rincon Canino</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside><img href="logo1" class="logo" src="Images/logo2.jpg" width = "250px" alt="PetShop Store"></aside>
+        <article>
+            <h3>Nuestras Redes</h3>
+            <p class="mail">Estamos para ayudarte, completa el formulario o escribinos a
+                <a href="mailto:lourdesdupuy@gmail.com?subject=contactsuport">nuestro correo</a>
+            </p> 
+            <form action='https://jkorpela.fi/cgi-bin/echo.cgi' method="post"> <!--creo el formulario-->
+                <h2>CONTACTO</h2>
+                <input type="text" name="Nombre" placeholder="Nombre" required> <!--creo el casillero de nombre con la palabra dentro-->
+                <input type="text" name="Apellido" placeholder="Apellido"required>
+                <input type="text" name="Correo" placeholder="Correo"required>
+                <textarea name="Mensaje" placeholder="Escriba aqui su mensaje"required></textarea>
+                <input type="reset" value="Reset" id="boton">
+                <input type="submit" value="Enviar" id="boton"> 
+            </form>
+        </article>
+    </main>
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="https://facebook.com/rinconcaninoenvigado" target="=_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://goo.gl/maps/XV3LgLqZY4MZrEXBA" target="_blank"><i class="fa fa-map-marker"></i></a>
+			<a href="https://instagram.com/rinconcanino" target="_blank"><i class="fa fa-instagram"></i></a>
+			<a href="https://wa.link/m6nbs8" target="_blank"><i class="fa fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a class="link-1" href="index.html">Inicio</a>
+                <a href="products.html">Productos</a>
+                <a href="contact.html">Contacto</a>
+            </p>
+            <p>&copy; 2021 - Rincon Canino </p>
+        </div>
+    </footer>
+</body>
+</html>

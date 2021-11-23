@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+}
+html, body{
+    height: 100%;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(14, 160, 140);
+    background-image: url("Images/fondo4.jpg");
+}
+h1{
+    color: rgb(24, 104, 179);
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: cursive;
+}
+p{
+    color: white;
+    font-size: 18px;
+    font-family: cursive;
+    text-align: center;
+}
+header{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(14, 160, 140);
+    padding: 15px;
+}
+nav a:visited,
+nav a:link{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    text-decoration: none;
+}
+nav > ul{
+    display: inline;
+    padding: 0;
+}
+nav > ul > li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px 0 5px;
+}
+main{
+    display: block;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 80%;
+}
+aside, article{
+    padding: 1em;
+}
+aside{
+    text-align: center;
+}
+@media only screen and (min-width:768px) {
+    main{
+        display: flex;
+    }
+    aside{
+        margin-left: 0%;
+    }
+}
+.logo{
+    max-height: 70%;
+    max-height: 70%;
+    margin: 0 4em 0 4em;
+}
+h1{
+    font-size: 3em;
+    margin-top: 0;
+    text-align: center;
+    margin: 0;
+}
+.subtitle{
+    background-color:rgb(148, 135, 135);
+    font-size: 1.5em;
+    padding: 5px;
+    border: solid 2px rgb(92, 89, 89);
+    margin: 0;
+}
+.image{
+    margin: 0;
+    width: 100%;
+}
+
+/*footer*/
+*{
+  font-family: Roboto;
+}
+.footer-distributed {
+  background-color: rgb(14, 160, 140);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 15px 40px;
+}
+.footer-distributed .footer-left p {
+  color: white;
+  font-size: 15px;
+  margin: 0;
+  text-align: left;
+}
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+  transition: ease .25s;
+}
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: white;
+  transition: ease .25s;
+}
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color:white;
+  display: inline-block;
+  padding-right: 5px;
+}
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 10px;
+  max-width: 180px;
+}
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+/*contacto*/
+.mail{
+    font-size: 30px;
+    color: rgb(45, 68, 68);
+    margin: 0;
+    padding: 0.5em;
+}
+form{
+    width: 450px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.4); 
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: solid 1px black;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton{
+    background: #33383b;
+    color: white;
+    padding: 20px;
+}
+#boton:hover{
+    cursor: pointer;
+}
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+h3{
+    color: rgb(24, 104, 179);
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: cursive;
+    margin: 0;
+    text-align: center;
+}
+
+/*productos*/
+h4{
+    color: rgb(24, 104, 179);
+    font-size: 53px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: cursive;
+    margin: 0;
+    text-align: center;
+}
+.element{
+    width: 250px;
+    padding: 10px;
+    margin: 3px;
+    background-color: rgb(14, 160, 140);
+    color: white;
+}
+.accesorio{
+    max-width: 100%;
+    max-height: 65%;
+}
+.element-information.title{
+    font-weight: bold;
+}
+.element-information.price{
+    font-weight: bold;
+    text-align: right;
+}
+.element-information{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0.3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+.element button{
+    background-color: slategray;
+    padding: 10px;
+    border: solid 1px slategray;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.columns-desktop1{
+    display: flex;
+}
+.columns-desktop2{
+    display: flex;
+}
+
+/*order*/
+.input-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.box{
+    padding: 0.3em;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Rincon Canino</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside><img href="logo1" class="logo" src="Images/logo2.jpg" width = "250px" alt="PetShop Store"></aside>
+        <article>
+            <h1>Order</h1>
+            <div class = "order-selected">
+            <img class="accesorio"src="" alt="producto">
+                    <div class="element-information">
+                        <div class="title">
+                        </div>
+                        <div class="price">
+                        </div>
+                    </div>
+            </div>
+            <form action='https://jkorpela.fi/cgi-bin/echo.cgi' method='POST'>
+                <div class="input-group">
+                    <div class="box">
+                    <input type="text" name="Nombre" placeholder="Nombre" required> <!--creo el casillero de nombre con la palabra dentro-->
+                    </div>
+                    <div class="box">
+                    <input type="text" name="Apellido" placeholder="Apellido"required>
+                    </div>
+                    <div class="box">
+                    <input type="text" name="Direccion" placeholder="Dirección"required>
+                    </div>
+                    <div class="box">
+                    <input type="text" name="Dpto/Piso" placeholder="Dpto/Piso">
+                    </div>
+                    <div class="box">
+                    <input type="text" name="Provincia" placeholder="Provincia"required>
+                    </div>
+                    <div class="box">
+                    <input type="text" name="Pais" placeholder="País"required>
+                    </div>
+                    <div class="box">
+                    <input type="text" name="Email" placeholder="Email"required>
+                    </div>
+                    <div class="box">
+                    <input type="text" name="Telefono" placeholder="Teléfono"required>
+                    </div>
+                    <div class="box">
+                    <textarea type="text" name="Producto" placeholder="Producto elegido"required></textarea>
+                    </div>
+                    <div class="box">
+                    <textarea name="Observaciones" placeholder="Observaciones"></textarea>
+                    </div>
+                    <div class="box">
+                    <input type="reset" value="Reset" id="boton">
+                    </div>
+                    <div class="box">
+                    <input type="submit" value="Enviar" id="boton">
+                    </div>
+                </div>
+            </form>
+            <p>
+            <a href="products.html">Volver a Productos</a>
+            </p>
+        </article>
+    </main>
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="https://facebook.com/rinconcaninoenvigado" target="=_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://goo.gl/maps/XV3LgLqZY4MZrEXBA" target="_blank"><i class="fa fa-map-marker"></i></a>
+			<a href="https://instagram.com/rinconcanino" target="_blank"><i class="fa fa-instagram"></i></a>
+			<a href="https://wa.link/m6nbs8" target="_blank"><i class="fa fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a class="link-1" href="index.html">Inicio</a>
+                <a href="products.html">Productos</a>
+                <a href="contact.html">Contacto</a>
+            </p>
+            <p>&copy; 2021 - Rincon Canino </p>
+        </div>
+    </footer>
+</body>
+<script>
+    window.addEventListener("DOMContentLoaded",()=>{
+        const order = localStorage.getItem("order");
+        if(order){
+            const productOrder = JSON.parse(order);
+            const orderSelected = document.querySelector(".order-selected");
+            orderSelected.querySelector(".title").innerText = productOrder.title;
+            orderSelected.querySelector(".price").innerText = productOrder.price;
+            const img = orderSelected.querySelector("img");
+            img.setAttribute("src", `Images/${productOrder.id}.jpg`);
+        }
+    });
+</script>
+</html>
